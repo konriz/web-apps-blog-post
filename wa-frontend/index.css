@@ -1,0 +1,37 @@
+body {
+    margin: auto;
+    max-width: 600px;
+}
+
+#form-container {
+    padding: 10px;
+}
+
+#conversion-result-container {
+    padding: 10px;
+
+}
+
+.conversion-result {
+    padding: 5px;
+}
+
+.conversion-inputs {
+    display: inline-block;
+}
+
+.amount-container {
+    display: inline-block;
+}
+
+.conversion-button {
+    display: inline-block;
+}
+
+.currency-select {
+    display: inline-block;
+}
+
+.errors {
+    color: red;
+}

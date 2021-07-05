@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Currency converter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1>Currency converter</h1>
+<div class="content">
+  <div id="form-container">
+    <h3>Query</h3>
+    <form id="convert-form">
+      <span>Convert</span>
+      <div class="amount-container">
+        <input type="number" min="0" step="0.01" required id="input-amount" name="inputAmount">
+      </div>
+      <div class="currency-select">
+        <select id="input-currency" name="inputCurrency">
+        </select>
+      </div>
+      <span>to</span>
+      <div class="currency-select">
+        <select id="output-currency" name="outputCurrency">
+        </select>
+      </div>
+      <div class="conversion-button">
+        <input type="submit" value="Convert">
+      </div>
+    </form>
+  </div>
+  <div id="conversion-result-container">
+    <h3>Result</h3>
+    <p id="conversion-tip">Input values to query above and click "Convert"</p>
+    <p class="conversion-result">
+      <span id="input-amount-slot">100.00</span> <span class="input-currency-slot">PLN</span>
+      =
+      <span id="output-amount-slot">100.00</span> <span class="output-currency-slot">PLN</span>
+    </p>
+    <p class="conversion-result">
+      <span>1.00</span> <span class="input-currency-slot">PLN</span>
+      =
+      <span
+        id="conversion-ratio">1.00</span> <span class="output-currency-slot">PLN</span>
+    </p>
+    <div class="errors">
+      <div id="validation-error" hidden>Validation error</div>
+      <div id="connection-error" hidden>Connection error</div>
+    </div>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
